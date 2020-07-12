@@ -1,0 +1,127 @@
+@import "normalize";
+
+* {
+  box-sizing: border-box;
+
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  // color: @text-color;
+  color: red;
+  font-family: @font-family-body;
+  font-size: @font-size-small;
+  line-height: @line-height-base;
+  background-color: @body-background;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  // font-family: @font-family;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+input::-ms-clear,
+input::-ms-reveal {
+  display: none;
+}
+
+a {
+  color: @link-color;
+  text-decoration: none;
+  background: transparent;
+  outline: none;
+  transition: color @transition-time ease;
+  cursor: pointer;
+
+  &:hover {
+    color: @link-hover-color;
+  }
+
+  &:active {
+    color: @link-active-color;
+  }
+
+  &:active,
+  &:hover {
+    text-decoration: none;
+    outline: 0;
+  }
+
+  &[disabled] {
+    color: #ccc;
+    cursor: @cursor-disabled;
+    pointer-events: none;
+  }
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: @code-family;
+}

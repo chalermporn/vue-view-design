@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+      "dbaeumer.vscode-eslint",
+      "msjsdiag.debugger-for-chrome",
+      "octref.vetur",
+      "xabikos.javascriptsnippets",
+      "xiguaxigua.vue-style-beautify"
+    ]
+  }
